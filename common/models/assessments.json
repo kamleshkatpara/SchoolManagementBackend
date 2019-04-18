@@ -1,0 +1,35 @@
+{
+  "name": "Assessments",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "total_score": {
+      "type": "number",
+      "required": true
+    },
+    "parent_assessment_id": {
+      "type": "number"
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

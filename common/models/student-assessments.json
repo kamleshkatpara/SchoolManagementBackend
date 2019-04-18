@@ -1,0 +1,40 @@
+{
+  "name": "Student_Assessments",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "student_id": {
+      "type": "number",
+      "required": true
+    },
+    "assessment_id": {
+      "type": "number",
+      "required": true
+    },
+    "volunteer_id": {
+      "type": "number",
+      "required": true
+    },
+    "score": {
+      "type": "number",
+      "required": true
+    },
+    "assessment_date": {
+      "type": "date",
+      "required": true
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

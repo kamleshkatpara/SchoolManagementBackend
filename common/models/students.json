@@ -1,0 +1,110 @@
+{
+  "name": "Students",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "batch_no": {
+      "type": "string",
+      "required": true
+    },
+    "role_no": {
+      "type": "string",
+      "required": true
+    },
+    "date_of_joining": {
+      "type": "date",
+      "required": true
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "Male",
+        "Female"
+      ]
+    },
+    "medium": {
+      "type": "string",
+      "required": true
+    },
+    "father_name": {
+      "type": "string",
+      "required": true
+    },
+    "father_occupation": {
+      "type": "string",
+      "required": true
+    },
+    "father_phone_number": {
+      "type": "number",
+      "required": true
+    },
+    "mother_name": {
+      "type": "string",
+      "required": true
+    },
+    "mother_occupation": {
+      "type": "string",
+      "required": true
+    },
+    "mother_phone_number": {
+      "type": "number",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "locality": {
+      "type": "string",
+      "required": true
+    },
+    "area": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "no_of_siblings": {
+      "type": "number",
+      "required": true
+    },
+    "shoe_size": {
+      "type": "number",
+      "required": true
+    },
+    "shirt_size": {
+      "type": "number",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "active",
+        "inactive"
+      ]
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    },
+    "deleted_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,45 @@
+{
+  "name": "studentassessmentsview",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "student": {
+      "type": "string",
+      "required": true
+    },
+    "assessment": {
+      "type": "string",
+      "required": true
+    },
+    "volunteer": {
+      "type": "string",
+      "required": true
+    },
+    "score": {
+      "type": "number",
+      "required": true
+    },
+    "assessment_date": {
+      "type": "date",
+      "required": true
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
