@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `accesstoken` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table sm.accesstoken: ~18 rows (approximately)
+-- Dumping data for table sm.accesstoken: ~17 rows (approximately)
 /*!40000 ALTER TABLE `accesstoken` DISABLE KEYS */;
 INSERT INTO `accesstoken` (`id`, `ttl`, `scopes`, `created`, `userId`) VALUES
 	('2nT8mo9CDNkZg875xy18ATDUKikNr3SGbjSha61CKYES3c5Xgg5iB1jLwbhYSpfd', 1209600, NULL, '2019-04-12 10:25:16', 1),
@@ -43,6 +43,7 @@ INSERT INTO `accesstoken` (`id`, `ttl`, `scopes`, `created`, `userId`) VALUES
 	('PAInfeezFiq1qEEr5z8oAKchcLyZB2AfC3glCAPytVpuIe8t57qmusHFBP1karT9', 1209600, NULL, '2019-04-12 10:54:54', 1),
 	('q5PDsaytK0ZfFxvCrp03R78tmKI56TbOpAyOY7k3OpyD44I83PjdTc9SCgccxfa0', 1209600, NULL, '2019-04-17 23:09:24', 1),
 	('rEfEfMFuIJqWalAAVNo4ZxzFxAi4KNhxdF1q0WMnX7vjO41Esks8z90UHw6y6icd', 1209600, NULL, '2019-04-13 18:05:18', 1),
+	('tbm8qwb9WJ7mXzzihhup8glQZYrFw4f3wmt4q019PWhT8MeAmO8m6xQUriusQmgW', 1209600, NULL, '2019-04-18 22:58:30', 1),
 	('voAWtq65CwtjmWWjwSqfzZHMktZcFlHmpEePMDAaxvToSJ5SMDPCyUb5uK0aJlo0', 1209600, NULL, '2019-04-17 02:23:45', 1),
 	('VqXvDleF3NClhszmAR5JCPvoWpvmb4kaL4heio5Nc7qkbPM8NaGXUD4Q5FtTJfR8', 1209600, NULL, '2019-04-15 03:35:55', 1),
 	('xaU8VyDBkSiwvGq1nIeo4qLFdhN3MFiDFxa7ZW7uAGCdCSiZI0jNhRWiWoZ5xCmV', 1209600, NULL, '2019-04-16 08:24:28', 1),
@@ -120,12 +121,13 @@ CREATE TABLE IF NOT EXISTS `schools` (
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sm.schools: ~1 rows (approximately)
+-- Dumping data for table sm.schools: ~0 rows (approximately)
 /*!40000 ALTER TABLE `schools` DISABLE KEYS */;
 INSERT INTO `schools` (`id`, `name`, `created_at`, `updated_at`) VALUES
-	(21, 'Domnic School', '2019-04-18 14:21:26', NULL);
+	(21, 'Domnic School', '2019-04-18 14:21:26', NULL),
+	(22, 'SHMS', '2019-04-18 22:58:58', '2019-04-18 22:59:02');
 /*!40000 ALTER TABLE `schools` ENABLE KEYS */;
 
 -- Dumping structure for view sm.studentassessmentsview
@@ -171,7 +173,7 @@ CREATE TABLE IF NOT EXISTS `students` (
   UNIQUE KEY `students_role_no_unique` (`role_no`),
   KEY `NAME` (`name`(191)),
   KEY `student_name` (`name`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table sm.students: ~1 rows (approximately)
 /*!40000 ALTER TABLE `students` DISABLE KEYS */;
@@ -213,7 +215,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
--- Dumping data for table sm.user: ~1 rows (approximately)
+-- Dumping data for table sm.user: ~0 rows (approximately)
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` (`id`, `realm`, `username`, `password`, `email`, `emailVerified`, `verificationToken`) VALUES
 	(1, 'admin', 'admin', '$2a$10$CUQXiGOcgq5OMsQtdx3od.dQaY9NqVaDq/LwQT8KwCM.B/I8dskp6', 'admin@admin.com', 1, NULL);
@@ -228,7 +230,7 @@ CREATE TABLE IF NOT EXISTS `volunteers` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sm.volunteers: ~1 rows (approximately)
+-- Dumping data for table sm.volunteers: ~0 rows (approximately)
 /*!40000 ALTER TABLE `volunteers` DISABLE KEYS */;
 INSERT INTO `volunteers` (`id`, `name`, `created_at`, `updated_at`) VALUES
 	(20, 'Rav', '2019-04-18 13:24:42', '2019-04-18 13:24:53');
